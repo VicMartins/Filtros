@@ -1,7 +1,12 @@
 // This is a JavaScript file
+$(document).ready(function(){
+  $('#imagem').hide();
+  $('.filtros').hide();
 
 $(document).on('click',"#camera",function(){
-
+   $('#camera').hide();
+   $('.filtros').show();
+    $('#imagem').show();
     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
     destinationType: Camera.DestinationType.FILE_URI });
 
@@ -29,4 +34,6 @@ $(document).on('change','#cinza',function(){
 
 $(document).on('change','#desfoque',function(){
   $('#imagem' ).css( "filter", "blur(" + $("#desfoque").val() + "%)");
+});
+
 });
