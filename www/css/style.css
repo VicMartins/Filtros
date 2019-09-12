@@ -10,12 +10,12 @@ body{
   color:black;
   background-color:rgba(109, 12, 117, 0.473);
   border:0;
-  margin-top:250px;
+  margin-top:260px;
   border-radius: 15px;
 }
 .btn:hover{
    background-color:rgba(234, 176, 240, 0.548);
-  color:white;
+   color:white;
 }
 h1{
   margin-top: 25px;

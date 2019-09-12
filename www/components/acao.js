@@ -33,7 +33,6 @@ $(document).on('change','#cinza',function(){
 });
 
 $(document).on('change','#desfoque',function(){
-  $('#imagem' ).css( "filter", "blur(" + $("#desfoque").val() + "%)");
+  $('#imagem' ).css( "filter", "blur(" + $("#desfoque").val() + "px)");
 });
-
 });
