@@ -15,7 +15,18 @@ function onFail(message) {
 }
 
 });
+$(document).on('change','#opacidade',function(){
+  $('#imagem' ).css( "filter", "opacity(" + $("#opacidade").val() + "%)");
+});
 
-$(document).on('change','#myRange',function(){
+$(document).on('change','#saturacao',function(){
+  $('#imagem' ).css( "filter", "saturate(" + $("#saturacao").val() + "%)");
+});
 
+$(document).on('change','#cinza',function(){
+  $('#imagem' ).css( "filter", "grayscale(" + $("#cinza").val() + "%)");
+});
+
+$(document).on('change','#desfoque',function(){
+  $('#imagem' ).css( "filter", "blur(" + $("#desfoque").val() + "%)");
 });
